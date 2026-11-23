@@ -1,0 +1,252 @@
+{
+  "title": "Gestione dei ricorsi",
+  "description": "Prototipo per registrare, monitorare e predisporre ricorsi per la spedizione tramite SANA. Dati e organizzazioni sono interamente inventati.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "dashboard",
+      "title": "Panoramica",
+      "description": "Quadro operativo dei ricorsi, con accesso alle liste filtrabili e alle attività in scadenza.",
+      "metrics": [
+        {
+          "label": "Ricorsi registrati",
+          "value": "24"
+        },
+        {
+          "label": "Da verificare",
+          "value": "6"
+        },
+        {
+          "label": "Pronti per SANA",
+          "value": "5"
+        },
+        {
+          "label": "Spediti",
+          "value": "9"
+        },
+        {
+          "label": "In attesa di integrazione",
+          "value": "4"
+        }
+      ],
+      "columns": [
+        "Riferimento",
+        "Oggetto",
+        "Data ricezione",
+        "Scadenza",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "RIC-2025-014",
+          "Ricorso amministrativo – pratica Lumo",
+          "2025-02-03",
+          "2025-03-05",
+          "Da verificare"
+        ],
+        [
+          "RIC-2025-018",
+          "Richiesta di riesame – pratica Vela",
+          "2025-02-07",
+          "2025-03-09",
+          "Pronto per SANA"
+        ],
+        [
+          "RIC-2025-021",
+          "Ricorso amministrativo – pratica Nubi",
+          "2025-02-11",
+          "2025-03-13",
+          "In attesa di integrazione"
+        ],
+        [
+          "RIC-2025-024",
+          "Richiesta di riesame – pratica Zefiro",
+          "2025-02-14",
+          "2025-03-16",
+          "Da verificare"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "ricorsi",
+      "title": "Ricorsi",
+      "description": "Elenco consultabile e filtrabile dei ricorsi. La ricerca per riferimento o oggetto e i filtri per stato e periodo sono controlli di consultazione, non campi di inserimento.",
+      "metrics": [],
+      "columns": [
+        "Riferimento",
+        "Oggetto",
+        "Data ricezione",
+        "Scadenza",
+        "Stato",
+        "Priorità"
+      ],
+      "rows": [
+        [
+          "RIC-2025-014",
+          "Ricorso amministrativo – pratica Lumo",
+          "2025-02-03",
+          "2025-03-05",
+          "Da verificare",
+          "Normale"
+        ],
+        [
+          "RIC-2025-015",
+          "Richiesta di riesame – pratica Oria",
+          "2025-02-04",
+          "2025-03-06",
+          "Spedito",
+          "Normale"
+        ],
+        [
+          "RIC-2025-016",
+          "Ricorso amministrativo – pratica Selva",
+          "2025-02-05",
+          "2025-03-07",
+          "In attesa di integrazione",
+          "Alta"
+        ],
+        [
+          "RIC-2025-017",
+          "Richiesta di riesame – pratica Brina",
+          "2025-02-06",
+          "2025-03-08",
+          "Chiuso",
+          "Bassa"
+        ],
+        [
+          "RIC-2025-018",
+          "Richiesta di riesame – pratica Vela",
+          "2025-02-07",
+          "2025-03-09",
+          "Pronto per SANA",
+          "Alta"
+        ],
+        [
+          "RIC-2025-019",
+          "Ricorso amministrativo – pratica Ardesia",
+          "2025-02-08",
+          "2025-03-10",
+          "Spedito",
+          "Normale"
+        ],
+        [
+          "RIC-2025-020",
+          "Richiesta di riesame – pratica Mirto",
+          "2025-02-10",
+          "2025-03-12",
+          "Da verificare",
+          "Bassa"
+        ],
+        [
+          "RIC-2025-021",
+          "Ricorso amministrativo – pratica Nubi",
+          "2025-02-11",
+          "2025-03-13",
+          "In attesa di integrazione",
+          "Alta"
+        ],
+        [
+          "RIC-2025-022",
+          "Richiesta di riesame – pratica Aster",
+          "2025-02-12",
+          "2025-03-14",
+          "Spedito",
+          "Normale"
+        ],
+        [
+          "RIC-2025-023",
+          "Ricorso amministrativo – pratica Fosco",
+          "2025-02-13",
+          "2025-03-15",
+          "Chiuso",
+          "Bassa"
+        ],
+        [
+          "RIC-2025-024",
+          "Richiesta di riesame – pratica Zefiro",
+          "2025-02-14",
+          "2025-03-16",
+          "Da verificare",
+          "Alta"
+        ],
+        [
+          "RIC-2025-025",
+          "Ricorso amministrativo – pratica Duna",
+          "2025-02-15",
+          "2025-03-17",
+          "Pronto per SANA",
+          "Normale"
+        ]
+      ],
+      "form": [
+        "Riferimento",
+        "Oggetto",
+        "Data ricezione",
+        "Scadenza",
+        "Stato",
+        "Priorità"
+      ]
+    },
+    {
+      "id": "spedizioni-sana",
+      "title": "Spedizioni SANA",
+      "description": "Prepara e monitora le spedizioni dei ricorsi tramite SANA, registrando soltanto i dati operativi essenziali. La coda è filtrabile per stato e data di preparazione.",
+      "metrics": [],
+      "columns": [
+        "Riferimento",
+        "Oggetto",
+        "Data preparazione",
+        "Destinazione",
+        "Stato spedizione",
+        "Ricevuta"
+      ],
+      "rows": [
+        [
+          "RIC-2025-018",
+          "Richiesta di riesame – pratica Vela",
+          "2025-02-17",
+          "Ufficio istruttoria Lumo",
+          "Pronto per invio",
+          "Non registrata"
+        ],
+        [
+          "RIC-2025-025",
+          "Ricorso amministrativo – pratica Duna",
+          "2025-02-18",
+          "Ufficio istruttoria Nubi",
+          "Pronto per invio",
+          "Non registrata"
+        ],
+        [
+          "RIC-2025-019",
+          "Ricorso amministrativo – pratica Ardesia",
+          "2025-02-12",
+          "Ufficio istruttoria Selva",
+          "Spedito",
+          "Registrata"
+        ],
+        [
+          "RIC-2025-022",
+          "Richiesta di riesame – pratica Aster",
+          "2025-02-13",
+          "Ufficio istruttoria Brina",
+          "Spedito",
+          "Registrata"
+        ]
+      ],
+      "form": [
+        "Riferimento",
+        "Oggetto",
+        "Data preparazione",
+        "Destinazione",
+        "Stato spedizione",
+        "Ricevuta"
+      ]
+    }
+  ],
+  "theme": {
+    "palette": "blu-istituzionale",
+    "fonts": "istituzionale"
+  }
+}
